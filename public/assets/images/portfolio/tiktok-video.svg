@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="TikTok video thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#92384a"/>
+      <stop offset="1" stop-color="#b84a5d"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <circle cx="320" cy="180" r="76" fill="#fffdfb" opacity="0.12"/>
+  <circle cx="320" cy="180" r="58" fill="#f3cbd2" opacity="0.9"/>
+  <path d="M306 150l50 30-50 30z" fill="#92384a"/>
+  <text x="320" y="285" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#fffdfb">TikTok video</text>
+</svg>

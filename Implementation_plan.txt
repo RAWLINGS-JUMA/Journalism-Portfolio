@@ -1,0 +1,809 @@
+# IMPLEMENTATION PLAN
+## Professional Broadcast Journalist Portfolio Website
+
+**Project Type:** Personal Professional Portfolio Website  
+**Target User:** Second-Year Journalism Student – Broadcast Journalism  
+**Development Approach:** Responsive, Multi-Page Frontend Website  
+**Development Tool:** OpenCode
+
+---
+
+# 1. PROJECT OVERVIEW
+
+### 1.1 Project Description
+
+The project involves designing and developing a modern, professional and responsive personal portfolio website for an emerging broadcast journalist who is currently pursuing her second year of journalism studies.
+
+The website will serve as her professional digital identity, providing a central platform where visitors, media organisations, potential employers, internship coordinators, mentors and collaborators can learn about her background, explore her journalism work, assess her skills and establish professional connections.
+
+The website must communicate professionalism, creativity, credibility and an interest in broadcast journalism.
+
+Although the owner is still a university student, the design and presentation should reflect a polished professional media portfolio without exaggerating her qualifications, experience or achievements.
+
+### 1.2 Main Objectives
+
+The website should:
+
+1. Establish a strong professional online identity.
+2. Showcase her broadcasting, reporting, interviewing and multimedia production abilities.
+3. Present her educational background and journalism-related competencies.
+4. Display her academic projects, practical assignments and media productions.
+5. Provide access to her written publications and multimedia content.
+6. Attract internship opportunities, professional collaborations and mentorship.
+7. Provide convenient access to her CV and professional contact information.
+
+---
+
+# 2. PROJECT SCOPE
+
+The project will be developed as a public-facing, multi-page website.
+
+### 2.1 Website Architecture
+
+The website will have six primary navigation items:
+
+1. Home
+2. About
+3. My Work
+4. Skills & Education
+5. Achievements
+6. Contact
+
+All related content will be organised as subsections within the appropriate pages.
+
+A separate Download CV button will be included in the main navigation or header.
+
+### 2.2 System Limitations and Exclusions
+
+The initial implementation will not include:
+
+- User registration or login.
+- Authentication and authorisation.
+- Administrator dashboard.
+- Database integration.
+- PHP or other backend application logic.
+- User account management.
+- Content management system.
+
+The website will use static frontend content and external services where necessary, such as YouTube for video hosting and an external form service for contact submissions.
+
+---
+
+# 3. TECHNOLOGY STACK
+
+OpenCode should use the following technologies:
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure and semantic markup |
+| CSS3 | Custom styling and visual presentation |
+| JavaScript | Interactivity and dynamic frontend behaviour |
+| Bootstrap 5 | Responsive layouts and reusable components |
+| Bootstrap Icons or Lucide Icons | Consistent interface icons |
+| Google Fonts | Professional typography |
+| YouTube Embed | Displaying broadcast videos |
+| Git and GitHub | Source code management and version control |
+
+Use standard HTML, CSS and JavaScript with Bootstrap 5. Avoid unnecessary frameworks, libraries and dependencies.
+
+The website must be deployable using ordinary static web hosting.
+
+---
+
+# 4. WEBSITE DESIGN AND VISUAL IDENTITY
+
+### 4.1 Design Direction
+
+The website should follow a premium corporate and editorial design approach.
+
+The visual identity should combine the appearance of a modern media organisation with the personal branding of a broadcast journalist.
+
+The design should be:
+
+- Professional and elegant.
+- Modern and visually appealing.
+- Minimal but not empty.
+- Editorial in presentation.
+- Consistent across all pages.
+- Easy to navigate.
+- Responsive across different screen sizes.
+
+Avoid excessive animations, unnecessary decorative elements, overcrowded sections and generic student portfolio templates.
+
+### 4.2 Colour Scheme
+
+Use the following proposed colour palette:
+
+| Colour | Hexadecimal | Application |
+|---|---|---|
+| Deep Navy | #101C2C | Primary backgrounds and navigation |
+| White | #FFFFFF | Main backgrounds and text contrast |
+| Gold | #D6B56D | Accent elements and highlights |
+| Light Grey | #F2F3F5 | Alternate section backgrounds |
+| Charcoal | #252B35 | Body text and secondary elements |
+
+Gold should be used sparingly to maintain a sophisticated appearance.
+
+### 4.3 Typography
+
+Use a combination of elegant serif headings and clean sans-serif body text.
+
+Recommended fonts:
+
+- Playfair Display – Main headings.
+- Inter – Body text and navigation.
+- Lato – Optional supporting typography.
+
+Typography should maintain a clear hierarchy between page titles, section headings, descriptions, captions and buttons.
+
+### 4.4 Photography and Visual Content
+
+Use professional photography throughout the website.
+
+Priority should be given to:
+
+- Her actual professional portrait.
+- Journalism-related photographs.
+- Reporting and interview photographs.
+- Broadcast studio photographs.
+- Actual video thumbnails.
+- Relevant academic and professional project images.
+
+Do not use random stock photographs as representations of her actual professional activities.
+
+Where personal photographs are not yet available, use clearly replaceable image placeholders.
+
+---
+
+# 5. DETAILED PAGE IMPLEMENTATION
+
+## PAGE 1: HOME
+
+**Purpose:** Introduce the journalist and establish her professional identity immediately.
+
+### Required Sections
+
+**A. Hero Section**
+
+Include:
+
+- Professional portrait.
+- Full professional name.
+- Professional title: Aspiring Broadcast Journalist.
+- A compelling introductory statement.
+- Brief description of her interests in journalism and media.
+- Explore My Work button.
+- Get In Touch button.
+- Download CV button.
+
+Suggested introductory statement:
+
+"Reporting That Informs. Voices That Inspire."
+
+Supporting description:
+
+"An emerging broadcast journalist passionate about broadcast production, news reporting and using media to inform, connect and create meaningful impact."
+
+The text should remain editable so it can be personalised using the customer's actual information.
+
+**B. Professional Introduction**
+
+A short introduction describing who she is, what she studies and her interest in broadcast journalism.
+
+Include a Read More link leading to the About page.
+
+**C. Featured Work**
+
+Display selected journalism projects using attractive cards.
+
+Each card should contain:
+
+- Project thumbnail.
+- Project title.
+- Category.
+- Brief description.
+- View Project action.
+
+**D. Areas of Interest**
+
+Showcase selected interests such as:
+
+- News Reporting.
+- Television Broadcasting.
+- Radio Broadcasting.
+- Interviewing.
+- Media Production.
+- Multimedia Production.
+
+**E. Portfolio Highlights**
+
+Display selected videos or reporting assignments.
+
+**F. Call to Action**
+
+Encourage visitors to explore her work or contact her regarding professional opportunities.
+
+---
+
+## PAGE 2: ABOUT
+
+**Purpose:** Present her professional background, academic journey and professional identity.
+
+### Required Subsections
+
+**A. Professional Biography**
+
+Include her full name, current academic status, university, course and interest in broadcast journalism.
+
+**B. Personal and Academic Journey**
+
+Present her journey into journalism, motivations and developing interests.
+
+**C. Journalism Philosophy**
+
+Describe her approach to broadcast production, responsible reporting, accuracy, ethical journalism and public communication.
+
+**D. Career Aspirations**
+
+Highlight her developing interests and the professional direction she hopes to pursue.
+
+**E. Personal Profile**
+
+Include relevant professional interests and qualities.
+
+The About page should use a balanced combination of text, photography and visually appealing content layouts.
+
+---
+
+## PAGE 3: MY WORK
+
+**Purpose:** This is the central showcase of her journalism abilities.
+
+It should have a strong visual presentation, particularly for video and multimedia content.
+
+### Required Subsections
+
+**A. Broadcast Portfolio**
+
+Showcase her broadcast journalism work.
+
+Content may include:
+
+- News presentation demonstrations.
+- Mock news bulletins.
+- Broadcast assignments.
+- Studio presentation exercises.
+
+**B. News Reporting**
+
+Display field reporting exercises, news coverage and reporting assignments.
+
+**C. Interviews**
+
+Showcase interviews conducted as part of academic or independent journalism projects.
+
+**D. Radio and Television**
+
+Display radio programmes, television production assignments and broadcasting demonstrations.
+
+**E. Projects and Documentaries**
+
+Showcase:
+
+- University journalism projects.
+- Documentary productions.
+- Multimedia production.
+- Group reporting assignments.
+- Special reporting projects.
+
+**F. Writing and Publications**
+
+Display:
+
+- News articles.
+- Feature reports.
+- Opinion pieces.
+- Published assignments.
+- Editorial contributions.
+
+### Portfolio Item Structure
+
+Each portfolio item should support:
+
+- Project title.
+- Category.
+- Thumbnail image.
+- Description.
+- Date or year.
+- Project type.
+- Media organisation or academic context, where applicable.
+- Video playback or external publication link.
+
+### Video Functionality
+
+Use YouTube embeds or external video links rather than storing large video files directly on the website.
+
+Implement:
+
+- Attractive video thumbnails.
+- Play buttons.
+- Responsive video playback.
+- Video lightbox or modal presentation.
+- Clear video titles and descriptions.
+
+Provide category filters for visitors to browse different types of work.
+
+If no actual content is available, use clearly labelled placeholders rather than inventing projects or publications.
+
+---
+
+## PAGE 4: SKILLS & EDUCATION
+
+**Purpose:** Demonstrate her academic background and developing professional competencies.
+
+### Required Subsections
+
+**A. Academic Background**
+
+Include:
+
+- University name.
+- Programme of study.
+- Current academic level.
+- Expected graduation year, if confirmed.
+- Relevant academic interests.
+
+**B. Journalism Skills**
+
+Showcase competencies such as:
+
+- News Writing.
+- News Reporting.
+- Interviewing.
+- Public Speaking.
+- News Presentation.
+- Research and Fact-Checking.
+- Communication.
+- Broadcast Production.
+
+**C. Technical and Media Skills**
+
+Include relevant skills where supported by her actual experience:
+
+- Audio Recording.
+- Video Production.
+- Video Editing.
+- Photography.
+- Audio Editing.
+- Multimedia Production.
+- Media Research.
+
+**D. Training and Workshops**
+
+Display relevant workshops, seminars, short courses and journalism training.
+
+Do not add certifications or claim proficiency without confirmation.
+
+Use clean skill cards, icons or structured competency groups instead of exaggerated percentage-based skill bars.
+
+---
+
+## PAGE 5: ACHIEVEMENTS
+
+**Purpose:** Highlight verified media participation only.
+
+### Required Content
+
+**Media Participation**
+
+Show involvement in university media activities, student media organisations and journalism-related initiatives. The only verified entry is the broadcast journalism internship at MMU Radio 99.9 FM Kajiado.
+
+Each entry supports:
+
+- Title.
+- Organisation.
+- Date.
+- Short description.
+
+Awards, competitions, conferences, events and certificates are intentionally excluded until verified details are supplied.
+
+---
+
+## PAGE 6: CONTACT
+
+**Purpose:** Make professional communication easy.
+
+### Required Sections
+
+**A. Contact Introduction**
+
+Provide a short, professional invitation for visitors to connect with her.
+
+**B. Contact Information**
+
+Include:
+
+- Professional email.
+- Phone number, if approved for public display.
+- LinkedIn.
+- YouTube.
+- Instagram.
+- Other relevant social platforms.
+
+**C. Contact Form**
+
+The form should contain:
+
+- Full Name.
+- Email Address.
+- Subject or Enquiry Type.
+- Message.
+- Submit button.
+
+Suggested enquiry categories:
+
+- Internship Opportunities.
+- Freelance Assignments.
+- Interviews.
+- Event Hosting.
+- Collaboration.
+- General Enquiries.
+
+Implement basic client-side validation.
+
+Because the website has no backend, use a configurable external form service for actual message delivery. Do not create a form that only displays a success message without sending the enquiry.
+
+Include a clear privacy notice and appropriate spam protection where supported by the chosen service.
+
+**D. Social Media Links**
+
+Display professional social media links with consistent icons.
+
+---
+
+# 6. GLOBAL WEBSITE COMPONENTS
+
+These components must be consistent across all pages.
+
+### 6.1 Header and Navigation
+
+Implement a responsive navigation bar containing:
+
+- Professional name or logo.
+- Home.
+- About.
+- My Work.
+- Skills & Education.
+- Achievements.
+- Contact.
+- Download CV button.
+
+The navigation should:
+
+- Highlight the currently active page.
+- Support dropdown menus where appropriate.
+- Collapse into a mobile hamburger menu.
+- Provide smooth transitions.
+- Remain accessible using keyboard navigation.
+
+Keep the six primary navigation items consistent.
+
+Subsections should be presented within their respective pages, not added as additional main navigation links.
+
+### 6.2 Footer
+
+Include:
+
+- Professional name.
+- Short professional description.
+- Quick navigation links.
+- Social media icons.
+- Professional email.
+- Copyright notice.
+- Back-to-top link.
+
+Use the current year dynamically for the copyright notice.
+
+### 6.3 Download CV
+
+The Download CV button should link to an actual PDF file stored in the project.
+
+Use a clearly defined asset location, such as:
+
+`assets/documents/cv.pdf`
+
+If the customer's CV has not yet been provided, use a clearly documented placeholder and do not create a fictitious CV.
+
+---
+
+# 7. FUNCTIONAL REQUIREMENTS
+
+The website must implement the following functionality:
+
+1. Responsive navigation and mobile menu.
+2. Smooth scrolling where appropriate.
+3. Working internal page navigation.
+4. Portfolio category filtering.
+5. Responsive video embeds.
+6. Video modal or lightbox.
+7. Downloadable CV.
+8. Functional external social media links.
+9. Validated contact form connected to a real submission service.
+10. Back-to-top functionality.
+11. Active navigation indicators.
+12. Subtle hover effects and page transitions.
+
+All buttons, links and interactive elements must perform their intended actions.
+
+Avoid decorative buttons that do nothing.
+
+---
+
+# 8. RESPONSIVE DESIGN REQUIREMENTS
+
+The website must provide an excellent experience on:
+
+- Desktop computers.
+- Laptops.
+- Tablets.
+- Android smartphones.
+- iPhones.
+
+Implement mobile-first responsive layouts.
+
+Pay particular attention to:
+
+- Navigation behaviour.
+- Image scaling.
+- Video dimensions.
+- Text readability.
+- Section spacing.
+- Card layouts.
+- Button sizes.
+- Contact form usability.
+
+Avoid horizontal scrolling and overflowing content.
+
+Test the website at common viewport widths, including approximately 375px, 768px, 1024px and 1440px.
+
+---
+
+# 9. SEO, ACCESSIBILITY AND PERFORMANCE
+
+### 9.1 Search Engine Optimisation
+
+Implement:
+
+- Unique page titles.
+- Meta descriptions.
+- Descriptive URLs.
+- Appropriate heading hierarchy.
+- Image alt attributes.
+- Open Graph metadata.
+- Sitemap.
+- Robots.txt.
+- Descriptive internal links.
+
+Use relevant professional keywords naturally, including broadcast journalism, news reporting, media production and journalist portfolio.
+
+### 9.2 Accessibility
+
+Follow good accessibility practices:
+
+- Semantic HTML5.
+- Keyboard-friendly navigation.
+- Appropriate colour contrast.
+- Visible focus indicators.
+- Descriptive image alternatives.
+- Accessible form labels.
+- Reduced-motion support.
+
+### 9.3 Performance
+
+Optimise the website by:
+
+- Compressing images.
+- Using WebP or AVIF where suitable.
+- Lazy-loading below-the-fold images.
+- Avoiding unnecessary JavaScript.
+- Loading fonts efficiently.
+- Using lightweight animations.
+- Avoiding unnecessarily large background videos.
+
+---
+
+# 10. RECOMMENDED PROJECT DIRECTORY STRUCTURE
+
+Organise the project professionally using the following structure:
+
+```text
+journalist-portfolio/
+│
+├── index.html
+├── about.html
+├── work.html
+├── skills-education.html
+├── achievements.html
+├── contact.html
+│
+├── assets/
+│   ├── images/
+│   │   ├── profile/
+│   │   ├── portfolio/
+│   │   └── backgrounds/
+│   │
+│   ├── videos/
+│   │
+│   ├── documents/
+│   │   └── cv.pdf
+│   │
+│   └── icons/
+│
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   └── components.css
+│
+├── js/
+│   ├── main.js
+│   ├── navigation.js
+│   ├── portfolio.js
+│   └── contact.js
+│
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
+
+Use reusable shared components or carefully structured includes where the selected development environment supports them without introducing an unnecessary backend.
+
+Maintain consistent headers, footers, navigation and design elements across all pages.
+
+---
+
+# 11. DEVELOPMENT PHASES
+
+OpenCode should implement the project in the following sequence.
+
+### PHASE 1: Project Inspection and Setup
+
+- Inspect the existing project directory.
+- Identify available files and existing configurations.
+- Establish the project structure.
+- Configure Bootstrap 5 and required assets.
+- Establish the global colour and typography system.
+
+Do not unnecessarily overwrite existing files or configurations.
+
+### PHASE 2: Design System and Shared Components
+
+Develop:
+
+- Global header.
+- Navigation.
+- Footer.
+- Buttons.
+- Cards.
+- Typography.
+- Spacing system.
+- Responsive layout utilities.
+
+### PHASE 3: Homepage Development
+
+Complete the homepage, ensuring that the hero section, professional introduction, featured work and calls to action establish a strong visual identity.
+
+### PHASE 4: Inner Pages Development
+
+Implement the remaining five pages according to the approved structure.
+
+Maintain consistent visual design while giving each page a layout appropriate to its content.
+
+### PHASE 5: JavaScript Functionality
+
+Implement navigation interactions, portfolio filtering, video modals, contact form validation and other specified functionality.
+
+### PHASE 6: Responsive Optimisation
+
+Test and refine the website on desktop, tablet and mobile devices.
+
+### PHASE 7: Quality Assurance
+
+Check:
+
+- Broken links.
+- Missing images.
+- Navigation errors.
+- Console errors.
+- Video playback.
+- Contact form submission.
+- CV download.
+- Responsive behaviour.
+- Accessibility.
+- SEO metadata.
+
+### PHASE 8: Documentation and Deployment Preparation
+
+Provide:
+
+- A README explaining the project.
+- Instructions for replacing personal content.
+- Instructions for adding portfolio items.
+- Instructions for configuring the contact form.
+- Instructions for replacing the CV.
+- Deployment instructions for static hosting.
+
+---
+
+# 12. CONTENT MANAGEMENT THROUGH SOURCE FILES
+
+Since the website will not have an admin dashboard, its content will be updated directly through the project files.
+
+Organise portfolio information in a structured and understandable way.
+
+For example, portfolio entries should be easy to add, edit or remove without rewriting the entire website.
+
+Where practical, use JavaScript data objects for repeated content such as:
+
+- Portfolio items.
+- Articles.
+- Achievements.
+- Skills.
+- Social links.
+
+Keep actual customer information separate from the general layout and styling.
+
+All personal details, photographs, videos, social links and academic information must be replaceable.
+
+---
+
+# 13. PROJECT QUALITY STANDARDS
+
+The final website must satisfy the following standards:
+
+1. It must look like a professionally designed personal media portfolio.
+2. It must not resemble a generic student assignment template.
+3. It must have a consistent visual identity across all six pages.
+4. It must be fully responsive.
+5. It must use real and verified customer information.
+6. It must not fabricate professional experience, publications, awards or certifications.
+7. It must not contain broken links or non-functional buttons.
+8. It must not contain unnecessary backend infrastructure.
+9. It must load efficiently and display correctly.
+10. Its source code must be clean, modular and maintainable.
+
+---
+
+# 14. FINAL DELIVERABLES
+
+At the completion of development, the project should contain:
+
+- A complete six-page journalist portfolio website.
+- Responsive navigation and shared page components.
+- Professional visual identity and styling.
+- Working portfolio and video presentation features.
+- Functional contact submission integration.
+- Downloadable CV integration.
+- Social media integration.
+- SEO and accessibility foundations.
+- Complete project source code.
+- README and deployment documentation.
+
+---
+
+# 15. FINAL INSTRUCTION TO OPENCODE
+
+Treat this document as the authoritative project implementation specification.
+
+Your task is to develop a complete, polished, professional broadcast journalist portfolio website that satisfies all the requirements described above.
+
+Do not stop after producing a homepage mockup or a static design preview. Implement all six pages and their specified functionality.
+
+Prioritise design consistency, responsive behaviour, maintainable code, professional presentation and functional completeness.
+
+Before implementing, inspect the project environment and available assets. If the customer's actual photographs, biography, CV, videos or other personal information have not been provided, create clearly identified placeholders that can be replaced later.
+
+Do not invent the customer's identity, educational qualifications, work experience, publications or achievements.
+
+Work systematically through the development phases, test the finished implementation and resolve identified issues before declaring the project complete.
+
+**The final result should be a polished digital professional identity for an emerging broadcast journalist, suitable for presenting to media organisations, potential employers, internship coordinators, mentors and professional collaborators.**

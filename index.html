@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davine Darwin | Media and Communication</title>
+    <meta name="description" content="Portfolio of Darvin Darwin, a broadcast journalism intern at MMU Radio 99.9 FM Kajiado." />
+    <meta name="theme-color" content="#B84A5D" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Davine Darwin | Media and Communication" />
+    <meta property="og:description" content="Broadcast journalism portfolio for Darvin Darwin, an intern at MMU Radio 99.9 FM Kajiado." />
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div id="site-chrome"></div>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="wrap hero__grid">
+          <div class="hero__content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">Portfolio</span>
+            </nav>
+
+            <p class="eyebrow">Broadcast Journalism &middot; News Presentation</p>
+            <h1 id="hero-title">Darvin Darwin</h1>
+            <p class="hero__tagline">Reporting That Informs. Voices That Inspire.</p>
+            <p class="hero__lede">
+              An emerging broadcast journalist with practical experience at MMU Radio 99.9 FM, Kajiado, focusing on radio broadcasting, news presentation and digital media, with a commitment to accurate reporting and effective communication.
+            </p>
+
+            <div class="hero__actions">
+              <a href="work.html" class="btn btn--primary">Explore My Work</a>
+              <a href="contact.html" class="btn btn--outline-dark">Get In Touch</a>
+              <a href="/assets/documents/cv-placeholder.pdf" class="btn btn--outline-dark" download="Download_My_CV.pdf">Download My CV</a>
+            </div>
+
+            <!-- URLS -->
+            <ul class="hero__social" id="hero-social" aria-label="Social profiles"></ul>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__frame">
+              <img class="hero__portrait" src="/assets/images/portrait.jpeg" data-site-portrait alt="Portrait of Darvin Darwin" width="720" height="921" fetchpriority="high" decoding="async" />
+            </div>
+            <div class="hero__note">
+              <span>Currently</span>
+              <strong>Broadcast Journalism Intern</strong>
+              <span class="hero__note-place">MMU Radio 99.9 FM Kajiado</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="home-cta" aria-labelledby="home-cta-title">
+        <div class="wrap contact__inner">
+          <p class="eyebrow">Let's Connect</p>
+          <h2 id="home-cta-title">Have a broadcast opportunity?</h2>
+          <p>I’d be glad to hear from editors, newsrooms and mentors.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="contact.html">Contact Me</a>
+            <a class="btn btn--outline-dark" href="work.html">See My Work</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">Top</button>
+    <div id="modal-root"></div>
+    <script type="module" src="/src/pages/home.ts"></script>
+  </body>
+</html>
