@@ -48,7 +48,7 @@ export const workItems: WorkItem[] = [
       'A broadcast presentation demonstrating on-air communication, news delivery and professional presentation skills.',
     details:
       'Watch the original upload from the video panel below. Add a fuller broadcast brief here when you are ready to describe the segment in more detail.',
-    thumbnail: '/assets/images/portfolio/april-2-2026.jpg',
+    thumbnail: './assets/images/portfolio/april-2-2026.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=3JdB6c5fLms',
     externalUrl: 'https://www.youtube.com/watch?v=3JdB6c5fLms',
   },
@@ -63,7 +63,7 @@ export const workItems: WorkItem[] = [
       'A broadcast segment showcasing news delivery and on-air presentation skills.',
     details:
       'Watch the original upload from the video panel below. Add a fuller broadcast brief here when you are ready to describe the segment in more detail.',
-    thumbnail: '/assets/images/portfolio/march-30-2026.jpg',
+    thumbnail: './assets/images/portfolio/march-30-2026.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=-rqXh6qkhic',
     externalUrl: 'https://www.youtube.com/watch?v=-rqXh6qkhic',
   },
@@ -78,7 +78,7 @@ export const workItems: WorkItem[] = [
       'A news presentation highlighting clear communication and effective broadcast delivery.',
     details:
       'This link starts at 00:04 in the original upload. Watch the full segment from the video panel below.',
-    thumbnail: '/assets/images/portfolio/march-12-2026.jpg',
+    thumbnail: './assets/images/portfolio/march-12-2026.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=iEtsFhA3bSQ&t=4s',
     externalUrl: 'https://www.youtube.com/watch?v=iEtsFhA3bSQ&t=4s',
   },
@@ -93,7 +93,7 @@ export const workItems: WorkItem[] = [
       'A short-form broadcast feature showcasing on-camera presentation and communication skills.',
     details:
       'Open the video panel to watch the original TikTok post. Add a fuller broadcast brief here when you are ready.',
-    thumbnail: '/assets/images/portfolio/tiktok-video.svg',
+    thumbnail: './assets/images/portfolio/tiktok-video.svg',
     videoUrl: 'https://www.tiktok.com/@davinechepkwemboi/video/7692697694384491796',
     externalUrl: 'https://www.tiktok.com/@davinechepkwemboi/video/7692697694384491796',
   },

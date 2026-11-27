@@ -2,7 +2,7 @@
 
 A responsive, six-page portfolio for Darvin Darwin, a broadcast journalism intern at MMU Radio 99.9 FM Kajiado. The interface follows a clean editorial structure — utility bar, sticky navigation, split hero, section eyebrows, skill cards, project cards and footer — with a light, professional coral-red palette inspired by the reference portfolio, softened for readability. The Home hero uses a custom broadcast-studio illustration with a microphone, headphones and presentation screen, and section headings use a heavier weight.
 
-The home page is intentionally lean: hero, social buttons and a clear call to action. Deeper personal detail lives on **About**, and all video samples live on **My Work**.
+The home page is intentionally lean: hero, social buttons and a clear call to action. Deeper personal detail lives on **About Me**, and all video samples live on **My Work**.
 
 Built with TypeScript + Vite. The output is static HTML, CSS and JavaScript, so it can be deployed to any ordinary static host.
 
@@ -21,7 +21,7 @@ The site uses the supplied name **Darvin Darwin**, the supplied **logo.jpeg**, *
 
 The About page uses `dav.jpeg` and `davi.jpeg` in the first two editorial frames and `radio.jpeg` in the “Growing into the newsroom.” section. All three images fill their frames with `object-fit: cover` and a controlled maximum frame width.
 
-University details, email, phone and CV were not supplied. Academic details live in `src/data/skills.ts`; the Contact page stays brief. The WhatsApp link uses the supplied Kenyan number. Nothing has been invented.
+University details, email and CV were not supplied. Academic details live in `src/data/skills.ts`; the Contact page stays brief. The WhatsApp link uses the supplied Kenyan number `+254 758 517136` and opens with a prefilled introduction message. Nothing has been invented.
 
 ## Important: placeholders are intentional
 
@@ -84,10 +84,10 @@ The Home hero includes buttons for **YouTube, X, Instagram, Facebook and TikTok*
 
 ### 1b. WhatsApp button
 
-The verified WhatsApp link is already set in `src/data/site.ts` for the supplied Kenyan number `0707769349`, stored in international format as `254707769349`:
+The verified WhatsApp link is already set in `src/data/site.ts` for the supplied Kenyan number `+254 758 517136`, stored in international format as `254758517136`. It also prefills this message: “Hello! I visited your portfolio and would like to connect regarding a potential opportunity.”
 
 ```ts
-whatsappUrl: 'https://wa.me/254707769349',
+whatsappUrl: `https://wa.me/254758517136?text=${encodeURIComponent(whatsappMessage)}`,
 ```
 
 The Contact page button opens that chat directly. If a different number is supplied, update `whatsappUrl`; `site.phone` is also converted to a `wa.me` link as a fallback.
@@ -157,6 +157,14 @@ Change these values at the top of `src/styles/global.css`.
 
 ## Deployment
 
-Run `npm run build`, then upload the contents of `dist/` to Netlify, Vercel, GitHub Pages, Cloudflare Pages or any static web server. No backend, database or PHP is required.
+Run `npm run build`, then upload the **contents of `dist/`** (not the repository root) to Netlify, Vercel, Cloudflare Pages or any static web server. No backend, database or PHP is required.
 
-For GitHub Pages with a repository subpath, set Vite's `base` option in `vite.config.ts` to match the repository path.
+### GitHub Pages
+
+The build uses relative asset URLs (`base: './'` in `vite.config.ts`), so it works from a repository subpath such as `https://username.github.io/repository-name/` without extra configuration. A ready-to-use workflow is included at `.github/workflows/deploy.yml`:
+
+1. Push this repository to GitHub.
+2. In **Settings → Pages → Source**, choose **GitHub Actions**.
+3. The workflow installs dependencies, runs `npm run build` and publishes the `dist/` folder automatically on every push to `main` or `master`.
+
+If you deploy manually instead, publish `dist/` to the `gh-pages` branch and make sure `dist/.nojekyll` is present. Never publish the source `index.html` files — they reference TypeScript entry files that browsers cannot run.

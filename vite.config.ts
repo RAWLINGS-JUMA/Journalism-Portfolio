@@ -4,6 +4,9 @@ import { resolve } from 'node:path';
 const root = process.cwd();
 
 export default defineConfig({
+  // Relative asset URLs keep the site working from any GitHub Pages path,
+  // e.g. https://username.github.io/repository-name/
+  base: './',
   build: {
     rollupOptions: {
       input: {

@@ -25,9 +25,9 @@ export const site = {
   availability: 'Intern at MMU Radio 99.9 FM Kajiado',
   email: '' as string,
   phone: '+254 758 517136' as string,
-  cvUrl: '/assets/documents/cv-placeholder.pdf',
-  portrait: '/assets/images/portrait.jpeg',
-  logo: '/assets/images/logo.jpeg',
+  cvUrl: './assets/documents/cv-placeholder.pdf',
+  portrait: './assets/images/portrait.jpeg',
+  logo: './assets/images/logo.jpeg',
 
   /**
    * Verified WhatsApp link. The Kenyan number 0758 517 136 is stored in
